@@ -1,0 +1,113 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.jpg"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Dosis:wght@300;400;500&family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!--Bootstrap cdn-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilo.css"/>
+    <title>Aroma-Home Tandil - Página de contacto</title>
+    <meta name="description" content="Página para contactarse con Aroma-Home Tandil">
+    <meta name="keywords"  content="CONTACTO, CONSULTAS, COMPRAS, RECLAMOS">
+ </head>
+ <body class="body-contacto">
+    <!--HEADER-->
+    <header>
+        <!-- Menu principal -->
+        <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">AROMA</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar__collapse collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="productos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Productos
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="productos.html#jabones">Jabones</a></li>
+                                <li><a class="dropdown-item" href="productos.html#difusores">Difusores</a></li>
+                                <li><a class="dropdown-item" href="productos.html#aromatizantes">Aromatizantes</a></li>
+                            </ul>
+                          </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="lineasFragancias.html">Fragancias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="preguntas.html">Preguntas</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+           <h1 class="titulo">Contacto</h1>
+    </header>
+    <!----------MAIN----------->
+    <main class="body-contacto__main">
+        <div>
+            <p>Por inquietudes sobre nuestros productos y consultas en general por favor complete el siguiente formulario</p>
+            <form class="form">
+                    <div>
+                        <label for="nombre">Nombre</label>
+                        <input class="form__element" type="text" name="nombre">
+                    </div>
+                    <div>
+                        <label for="apellido">Apellido</label>
+                        <input class="form__element" type="text" name="apellido">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input class="form__element" type="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="tipoConsulta">Seleccione el motivo de su consulta</label>
+                        <select class="form__element" name="tipoConsulta">
+                            <option>Productos</option>
+                            <option>Reclamos</option>
+                            <option>Otros</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="comentarios">Escriba su mensaje</label><br>
+                        <textarea class="form__element" cols="50" rows="10" name="comentarios"></textarea>
+                    </div>
+                    <div class="form-check">
+                        <label for="newsletter">Deseo recibir novedades y promociones a mi direccion de email</label>
+                        <input class="form-check-input" type="checkbox" name="newsletter">
+                    </div>
+                    <div>
+                        <input class="form__button" type="reset" value="Borrar">
+                        <input class="form__button" type="submit" name="Enviar">
+                    </div>
+            </form>
+        </div>
+    </main>
+    <!-- FOOTER: direccion y redes -->
+    <footer>
+        <div>
+            <h4 class="cursiva">Seguinos en las redes!</h4>
+            <a href="https://www.instagram.com/aromahome.tandil/?hl=es"><i class="footer__icon fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100073202107967"><i class="footer__icon fab fa-facebook-square"></i></a>
+        </div>
+        <div>
+        <p>7000 - Tandil</br> Buenos Aires</br>Argentina</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js" integrity="sha384-PsUw7Xwds7x08Ew3exXhqzbhuEYmA2xnwc8BuD6SEr+UmEHlX8/MCltYEodzWA4u" crossorigin="anonymous"></script>
+ </body>
+ </html>

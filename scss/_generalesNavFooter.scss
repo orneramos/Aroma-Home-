@@ -1,0 +1,149 @@
+/* ----------------- Generales: body, Navbar, Footer ------------------ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+
+body {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 300;
+    font-size: 1.3rem;
+    min-width: 350px;
+    header {
+        .navbar {
+            background-color: $colorGris;
+            background-image: $fondoGradiente;
+            opacity: 0.9;
+            box-shadow: $boxShadow;
+            padding: auto;
+            font-weight: 500;
+            .navbar__collapse {
+                flex-grow: 0;
+            }
+        }
+        .navbar-light .navbar-brand{
+            color: black;
+            font-size: 2rem;
+            &:hover {
+                color: black;
+            }
+        }  
+        .navbar-light .navbar-nav .nav-link {
+            @extend .navbar-brand;
+            font-size: 1.5rem;
+        }  
+        .dropdown-item:hover {
+            background-color: white;
+            color: black
+        }
+    }
+    footer {
+        background-color: #ECE9E6;
+        background-image: $fondoGradiente; 
+        opacity: 0.9;
+        color: black;
+        padding: 1rem;
+        text-align: center;
+        box-shadow: $boxShadow-arriba;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1rem 3rem;
+        .footer__icon {
+            margin: 1rem 0.5rem;
+            color: black;
+            transition: all 0.3s;
+            &:hover{
+                transform: scale(1.5, 1.5);
+            }
+        }
+    }
+}
+
+/* Generales y Helpers */
+h1 {
+    margin: 8rem auto 2rem auto;
+}
+
+h3 {
+    margin: 1rem;
+    line-height: 1rem;
+}
+
+.titulo {
+    font-family: 'Dosis', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 500;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    line-height: 2rem;
+    text-align: center;
+}
+
+.subtitulo {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2rem;
+    margin: 1rem 0.5rem;
+    padding: 0.5rem;
+}
+
+.cursiva {
+    font-family: 'Caveat', cursive;
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.uppercase {
+    text-transform: uppercase;
+    margin: 2rem 1rem;
+}
+
+ul {
+    list-style: none;
+    line-height: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: black;
+    text-shadow: $textShadow;
+}
+
+%button {
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    text-decoration: none;
+    width: 15rem;
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 0.5rem;
+    margin: 2rem;
+    transition: all 0.3s;
+    box-shadow:  $boxShadow;
+}
+
+
+%bodyContPreg {
+    width: 80%;
+    margin: 2rem auto 4rem auto;
+    background-color: white;
+    padding: 1rem;
+    border: 1px solid #d6763e;
+    border-radius: 1%;
+}

@@ -1,0 +1,96 @@
+/* ---------------------- INDEX ----------------------*/
+.header-index{
+    .index-portada {
+        @include background($fondoPortada, cover, center);
+        height: 50rem;
+        text-align: center;
+        .index-portada__logo {
+            img {
+                margin: 6rem auto;
+                width: 18rem;
+                opacity: 0.9;
+                border-radius: 2%;
+            }
+        }
+        .index-portada__descripcion {
+            margin-top: 12rem;
+            padding: 1rem;
+            h3 {
+                line-height: 3rem;
+                font-family: $cursiva;
+            }
+        }
+        .index-portada__button {
+            @extend %button;
+            &:hover{
+                background-color: white;
+                color: black;
+                letter-spacing: 2px;
+                border: none;
+            }
+        }
+    }
+}
+main {
+    .primera-seccion{
+        margin: 3rem auto;
+        .div-imagenes {
+            .div-imagenes__img {
+                max-height: 250px;
+                max-width: 300px;
+                margin: 1rem;
+            }
+        }
+    }
+    .segunda-seccion {
+        margin: 2rem 0; 
+        @include background($fondoGradiente, cover, center);
+        .segunda-seccion__novedad {
+            text-align: center;
+            margin: 4rem auto 0 auto;
+        }
+        .segunda-seccion__img {
+            float: right;
+            max-width: 600px;
+        }
+    }
+    .tercera-seccion {
+        .tercera-seccion__div {
+            width: 80%;
+            margin: 2rem auto;
+            img {
+                margin: 1rem 3rem;
+                max-width: 300px;
+            }
+        }
+    }
+}
+
+    
+    /* ---MEDIA QUERIES ---*/
+
+    /*mayor a 900px */
+    @media only screen and (min-width: 900px) {
+        .tercera-seccion {
+            .tercera-seccion__div {      
+                img {
+                    max-width: 200px;
+                }
+            }
+        }
+    }
+    
+    /* mayor a 1200*/
+    @media only screen and (min-width: 1200px) {
+        .tercera-seccion {
+            .tercera-seccion__div {
+                display: flex;
+                width: 80%;
+                margin: 2rem auto;       
+                img {
+                    margin: 1rem 3rem;
+                    max-width: 300px;
+                }
+            }
+        }
+    }

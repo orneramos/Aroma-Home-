@@ -1,0 +1,28 @@
+//variables y funciones generales
+
+$cursiva: 'Caveat', cursive;
+
+$textShadow: 1px 1px 2px grey;
+
+$boxShadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+$boxShadow-arriba: 0 -2px 2px 1px rgba(0, 0, 0, 0.2);
+
+$fondoPortada: url("../img/portada.jpg");
+
+$fondoGradiente: linear-gradient(to right, #FFFFFF, #ECE9E6);
+
+$fondoPlumas: url("../img/plumas.png");
+
+$colorGris: #ECE9E6;
+
+@mixin sizes($width, $height) {
+    height: $height;
+    width: $width;
+}
+
+@mixin background($bg-img, $bg-size, $bg-position) {
+    background-image: $bg-img;
+    background-size: $bg-size;
+    background-position: $bg-position;
+}

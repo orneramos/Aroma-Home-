@@ -1,0 +1,32 @@
+/* -------------------- Seccion Contacto ------------------- */
+
+.body-contacto {  
+    @include background($fondoPlumas, auto, right center);
+    .body-contacto__main {
+        @extend %bodyContPreg;
+        .form {
+            margin:  1rem;
+            padding: 1rem;
+            .form__element {
+                width: 100%;
+                border: 1px solid rgb(121, 119, 119);
+                margin: 1rem;
+                padding: 0.5rem;
+                &:focus {
+                    outline: thin;
+                    border: 2px solid #C77345;
+                }
+            }
+            .form__button {
+                @extend %button;
+                &:hover{
+                    background-color: white;
+                    color: black;
+                    letter-spacing: 2px;
+                    border: none;
+                }
+            }
+        }
+    }
+}
+

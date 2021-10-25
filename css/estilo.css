@@ -1,0 +1,286 @@
+/* ---------------------- INDEX ----------------------*/
+.header-index .index-portada {
+  background-image: url("../img/portada.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 50rem;
+  text-align: center; }
+  .header-index .index-portada .index-portada__logo img {
+    margin: 6rem auto;
+    width: 18rem;
+    opacity: 0.9;
+    border-radius: 2%; }
+  .header-index .index-portada .index-portada__descripcion {
+    margin-top: 12rem;
+    padding: 1rem; }
+    .header-index .index-portada .index-portada__descripcion h3 {
+      line-height: 3rem;
+      font-family: "Caveat", cursive; }
+  .header-index .index-portada .index-portada__button:hover {
+    background-color: white;
+    color: black;
+    letter-spacing: 2px;
+    border: none; }
+
+main .primera-seccion {
+  margin: 3rem auto; }
+  main .primera-seccion .div-imagenes .div-imagenes__img {
+    max-height: 250px;
+    max-width: 300px;
+    margin: 1rem; }
+
+main .segunda-seccion {
+  margin: 2rem 0;
+  background-image: linear-gradient(to right, #FFFFFF, #ECE9E6);
+  background-size: cover;
+  background-position: center; }
+  main .segunda-seccion .segunda-seccion__novedad {
+    text-align: center;
+    margin: 4rem auto 0 auto; }
+  main .segunda-seccion .segunda-seccion__img {
+    float: right;
+    max-width: 600px; }
+
+main .tercera-seccion .tercera-seccion__div {
+  width: 80%;
+  margin: 2rem auto; }
+  main .tercera-seccion .tercera-seccion__div img {
+    margin: 1rem 3rem;
+    max-width: 300px; }
+
+/* ---MEDIA QUERIES ---*/
+/*mayor a 900px */
+@media only screen and (min-width: 900px) {
+  .tercera-seccion .tercera-seccion__div img {
+    max-width: 200px; } }
+
+/* mayor a 1200*/
+@media only screen and (min-width: 1200px) {
+  .tercera-seccion .tercera-seccion__div {
+    display: flex;
+    width: 80%;
+    margin: 2rem auto; }
+    .tercera-seccion .tercera-seccion__div img {
+      margin: 1rem 3rem;
+      max-width: 300px; } }
+
+/* ------------------ Seccion Productos --------------------- */
+.productos-container {
+  display: flex;
+  flex-flow: row wrap; }
+  .productos-container .productos-container__producto {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 2rem;
+    width: 200px;
+    text-align: center; }
+    .productos-container .productos-container__producto .productos-container__producto__img {
+      width: 200px;
+      transition: all 0.4s;
+      box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); }
+      .productos-container .productos-container__producto .productos-container__producto__img:hover {
+        transform: translate(5px, 5px); }
+
+/* -------------------- Seccion Contacto ------------------- */
+.body-contacto {
+  background-image: url("../img/plumas.png");
+  background-size: auto;
+  background-position: right center; }
+  .body-contacto .body-contacto__main .form {
+    margin: 1rem;
+    padding: 1rem; }
+    .body-contacto .body-contacto__main .form .form__element {
+      width: 100%;
+      border: 1px solid #797777;
+      margin: 1rem;
+      padding: 0.5rem; }
+      .body-contacto .body-contacto__main .form .form__element:focus {
+        outline: thin;
+        border: 2px solid #C77345; }
+    .body-contacto .body-contacto__main .form .form__button:hover {
+      background-color: white;
+      color: black;
+      letter-spacing: 2px;
+      border: none; }
+
+/* ------------------ Seccion Lineas de fragancias ------------------- */
+.lineas-fragancias {
+  width: 80%; }
+  .lineas-fragancias .lineas-fragancias__descripcion {
+    margin: 1rem; }
+  .lineas-fragancias .lineas-fragancias__lista .box {
+    height: 250px;
+    width: 250px;
+    text-align: center;
+    padding: 0.5rem;
+    color: black;
+    border-radius: 25px;
+    margin: 1rem auto; }
+    .lineas-fragancias .lineas-fragancias__lista .box:hover {
+      background-color: white;
+      border: 2px solid black; }
+      .lineas-fragancias .lineas-fragancias__lista .box:hover p {
+        opacity: 1;
+        transition: all 1s; }
+      .lineas-fragancias .lineas-fragancias__lista .box:hover h4 {
+        opacity: 0;
+        transition: all 1s; }
+    .lineas-fragancias .lineas-fragancias__lista .box h4 {
+      font-size: 1.5rem;
+      color: white;
+      text-shadow: 1px 1px 2px grey;
+      transition: all 1s;
+      opacity: 1; }
+    .lineas-fragancias .lineas-fragancias__lista .box p {
+      opacity: 0;
+      transition: all 1s;
+      font-size: 1.5rem; }
+
+.lineas-fragancias--classic .box {
+  background-color: #d6763e;
+  opacity: 0,9; }
+
+.lineas-fragancias--terra .box {
+  background-color: #89A61F;
+  opacity: 0,9; }
+
+.lineas-fragancias--jabones .box {
+  background-color: #7E94BF;
+  opacity: 0,9; }
+
+/* media queries*/
+@media only screen and (min-width: 480px) {
+  .lineas-fragancias {
+    margin: 3rem auto; }
+    .lineas-fragancias .lineas-fragancias__lista {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly; } }
+
+/* -------------------- Seccion Preguntas -------------------- */
+.body-preguntas {
+  background-image: url("../img/plumas.png");
+  background-size: auto;
+  background-position: right center; }
+
+/* ----------------- Generales: body, Navbar, Footer ------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Dosis', sans-serif;
+  font-weight: 300;
+  font-size: 1.3rem;
+  min-width: 350px; }
+  body header .navbar {
+    background-color: #ECE9E6;
+    background-image: linear-gradient(to right, #FFFFFF, #ECE9E6);
+    opacity: 0.9;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    padding: auto;
+    font-weight: 500; }
+    body header .navbar .navbar__collapse {
+      flex-grow: 0; }
+  body header .navbar-light .navbar-brand, body header .navbar-light .navbar-nav .nav-link {
+    color: black;
+    font-size: 2rem; }
+    body header .navbar-light .navbar-brand:hover, body header .navbar-light .navbar-nav .nav-link:hover {
+      color: black; }
+  body header .navbar-light .navbar-nav .nav-link {
+    font-size: 1.5rem; }
+  body header .dropdown-item:hover {
+    background-color: white;
+    color: black; }
+  body footer {
+    background-color: #ECE9E6;
+    background-image: linear-gradient(to right, #FFFFFF, #ECE9E6);
+    opacity: 0.9;
+    color: black;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 -2px 2px 1px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 3rem; }
+    body footer .footer__icon {
+      margin: 1rem 0.5rem;
+      color: black;
+      transition: all 0.3s; }
+      body footer .footer__icon:hover {
+        transform: scale(1.5, 1.5); }
+
+/* Generales y Helpers */
+h1 {
+  margin: 8rem auto 2rem auto; }
+
+h3 {
+  margin: 1rem;
+  line-height: 1rem; }
+
+.titulo {
+  font-family: 'Dosis', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  line-height: 2rem;
+  text-align: center; }
+
+.subtitulo {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2rem;
+  margin: 1rem 0.5rem;
+  padding: 0.5rem; }
+
+.cursiva {
+  font-family: 'Caveat', cursive;
+  font-size: 2rem;
+  margin: 1rem; }
+
+.bold {
+  font-weight: bold; }
+
+.uppercase {
+  text-transform: uppercase;
+  margin: 2rem 1rem; }
+
+ul {
+  list-style: none;
+  line-height: 2rem; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+a:hover {
+  color: black;
+  text-shadow: 1px 1px 2px grey; }
+
+.header-index .index-portada .index-portada__button, .body-contacto .body-contacto__main .form .form__button {
+  font-family: 'Dosis', sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  text-decoration: none;
+  width: 15rem;
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+  border-radius: 4px;
+  padding: 0.5rem;
+  margin: 2rem;
+  transition: all 0.3s;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); }
+
+.body-contacto .body-contacto__main, .body-preguntas .body-preguntas__preguntas {
+  width: 80%;
+  margin: 2rem auto 4rem auto;
+  background-color: white;
+  padding: 1rem;
+  border: 1px solid #d6763e;
+  border-radius: 1%; }
