@@ -1,23 +1,29 @@
 /* ---------------------- INDEX ----------------------*/
 .header-index{
     .index-portada {
-        @include background($fondoPortada, cover, center);
-        height: 50rem;
         text-align: center;
+        margin-top: 8rem;
         .index-portada__logo {
             img {
-                margin: 6rem auto;
-                width: 18rem;
-                opacity: 0.9;
-                border-radius: 2%;
+                width: 8rem;
+                margin: 0;
+            }
+            h2 {
+                font-size: 3rem;
+                margin: 0;
+            }
+            p {
+                margin-top: 0;
             }
         }
         .index-portada__descripcion {
-            margin-top: 12rem;
-            padding: 1rem;
             h3 {
                 line-height: 3rem;
-                font-family: $cursiva;
+            }
+        }
+        .index-portada__img {
+                img {
+                max-height: 500px;
             }
         }
         .index-portada__button {

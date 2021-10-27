@@ -24,7 +24,7 @@ body {
             }
         }
         .navbar-light .navbar-brand{
-            color: black;
+            color: $colorNaranja;
             font-size: 2rem;
             &:hover {
                 color: black;
@@ -52,9 +52,10 @@ body {
         align-items: center;
         padding: 1rem 3rem;
         .footer__icon {
-            margin: 1rem 0.5rem;
+            margin: 1rem 0.8rem;
             color: black;
             transition: all 0.3s;
+            font-size: 2rem;
             &:hover{
                 transform: scale(1.5, 1.5);
             }

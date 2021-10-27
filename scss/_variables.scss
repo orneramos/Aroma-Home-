@@ -16,6 +16,8 @@ $fondoPlumas: url("../img/plumas.png");
 
 $colorGris: #ECE9E6;
 
+$colorNaranja: #e48400;
+
 @mixin sizes($width, $height) {
     height: $height;
     width: $width;
