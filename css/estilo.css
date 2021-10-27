@@ -181,13 +181,20 @@ body {
     font-weight: 500; }
     body header .navbar .navbar__collapse {
       flex-grow: 0; }
-  body header .navbar-light .navbar-brand, body header .navbar-light .navbar-nav .nav-link {
-    color: #e48400;
-    font-size: 2rem; }
-    body header .navbar-light .navbar-brand:hover, body header .navbar-light .navbar-nav .nav-link:hover {
-      color: black; }
+  body header .navbar-light .navbar-brand {
+    color: #f7762c;
+    font-size: 2rem;
+    transition: all 0.3s; }
+    body header .navbar-light .navbar-brand:hover {
+      color: #f7762c; }
   body header .navbar-light .navbar-nav .nav-link {
-    font-size: 1.5rem; }
+    color: #080808;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    transition: all 0.3s; }
+    body header .navbar-light .navbar-nav .nav-link:hover {
+      text-shadow: 1px 1px 2px grey;
+      color: #080808; }
   body header .dropdown-item:hover {
     background-color: white;
     color: black; }
@@ -207,7 +214,7 @@ body {
       margin: 1rem 0.8rem;
       color: black;
       transition: all 0.3s;
-      font-size: 2rem; }
+      font-size: 2.2rem; }
       body footer .footer__icon:hover {
         transform: scale(1.5, 1.5); }
 

@@ -3,6 +3,8 @@
 $cursiva: 'Caveat', cursive;
 
 $textShadow: 1px 1px 2px grey;
+$textShadow2: 1px 1px 2px #f7762c;
+$textShadow3: 1px 1px 2px black;
 
 $boxShadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 
@@ -16,7 +18,7 @@ $fondoPlumas: url("../img/plumas.png");
 
 $colorGris: #ECE9E6;
 
-$colorNaranja: #e48400;
+$colorNaranja: #f7762c;
 
 @mixin sizes($width, $height) {
     height: $height;
