@@ -1,6 +1,7 @@
 /* ------------------ Seccion Lineas de fragancias ------------------- */
 .lineas-fragancias {
     width: 80%;
+    background-color:#fad6a5;
     .lineas-fragancias__descripcion {
         margin: 1rem;
     }
@@ -41,9 +42,15 @@
 }
 
 $colors: (
-    classic: #d6763e,
-    terra:  #89A61F,
-    jabones: #7E94BF
+    classic: rgb(250, 214, 165),
+    terra:  rgb(193, 154, 107),
+    jabones: rgb(241, 165, 89)
+);
+
+$backgroudcolors: (
+    classic: rgba(250, 214, 165, 0.4),
+    terra:  rgba(193, 154, 107, 0.4),
+    jabones: rgba(241, 165, 89, 0.4)
 );
 
 @each $name, $bgcolor in $colors {
@@ -52,6 +59,12 @@ $colors: (
         opacity: 0,9;
     }
 }
+@each $name, $bgcolor in $backgroudcolors {
+    .lineas-fragancias--#{$name} {
+        background-color: $bgcolor;
+    }
+}
+
 
 /* media queries*/
 @media only screen and (min-width: 480px) {  

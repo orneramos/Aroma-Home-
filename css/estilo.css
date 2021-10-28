@@ -103,7 +103,8 @@ main .tercera-seccion .tercera-seccion__div {
 
 /* ------------------ Seccion Lineas de fragancias ------------------- */
 .lineas-fragancias {
-  width: 80%; }
+  width: 80%;
+  background-color: #fad6a5; }
   .lineas-fragancias .lineas-fragancias__descripcion {
     margin: 1rem; }
   .lineas-fragancias .lineas-fragancias__lista .box {
@@ -135,16 +136,25 @@ main .tercera-seccion .tercera-seccion__div {
       font-size: 1.5rem; }
 
 .lineas-fragancias--classic .box {
-  background-color: #d6763e;
+  background-color: #fad6a5;
   opacity: 0,9; }
 
 .lineas-fragancias--terra .box {
-  background-color: #89A61F;
+  background-color: #c19a6b;
   opacity: 0,9; }
 
 .lineas-fragancias--jabones .box {
-  background-color: #7E94BF;
+  background-color: #f1a559;
   opacity: 0,9; }
+
+.lineas-fragancias--classic {
+  background-color: rgba(250, 214, 165, 0.4); }
+
+.lineas-fragancias--terra {
+  background-color: rgba(193, 154, 107, 0.4); }
+
+.lineas-fragancias--jabones {
+  background-color: rgba(241, 165, 89, 0.4); }
 
 /* media queries*/
 @media only screen and (min-width: 480px) {
