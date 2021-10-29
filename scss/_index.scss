@@ -1,13 +1,21 @@
 /* ---------------------- INDEX ----------------------*/
 .header-index{
     .index-portada {
+        display: grid;
+        grid-template-areas: "vacio" "logo";
+        grid-template-rows: 4fr 1fr;
         text-align: center;
-        margin-top: 8rem;
+        height: 700px;
+        width: 100%;
+        background-image: $fondoPortada;
+        background-position: center;
+        background-size: cover;
+        margin-top: 3rem;
+        .index-portada__vacio {
+            grid-area: "vacio";
+        }
         .index-portada__logo {
-            img {
-                width: 8rem;
-                margin: 0;
-            }
+            grid-area: "logo";
             h2 {
                 font-size: 3rem;
                 margin: 0;
@@ -15,18 +23,11 @@
             p {
                 margin-top: 0;
             }
-        }
-        .index-portada__descripcion {
             h3 {
                 line-height: 3rem;
             }
         }
-        .index-portada__img {
-                img {
-                max-height: 500px;
-            }
-        }
-        .index-portada__button {
+        /* .index-portada__button {
             @extend %button;
             &:hover{
                 background-color: white;
@@ -34,7 +35,7 @@
                 letter-spacing: 2px;
                 border: none;
             }
-        }
+        } */
     }
 }
 main {

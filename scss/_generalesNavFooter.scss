@@ -13,12 +13,9 @@ body {
     min-width: 350px;
     header {
         .navbar {
-            background-color: $colorGris;
-            background-image: $fondoGradiente;
-            opacity: 0.9;
-            box-shadow: $boxShadow;
             padding: auto;
             font-weight: 500;
+            background-color: white;
             .navbar__collapse {
                 flex-grow: 0;
             }
