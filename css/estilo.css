@@ -89,13 +89,10 @@ section {
         margin-left: 1rem; }
 
 /* -------------------- Seccion Contacto ------------------- */
-.body-contacto {
-  background-image: url("../img/plumas.png");
-  background-size: auto;
-  background-position: right center; }
+.body-contacto .body-contacto__main {
+  padding: 2rem; }
   .body-contacto .body-contacto__main .form {
-    margin: 1rem;
-    padding: 1rem; }
+    margin: 1rem; }
     .body-contacto .body-contacto__main .form .form__element {
       width: 100%;
       border: 1px solid #797777;
@@ -175,10 +172,8 @@ section {
       justify-content: space-evenly; } }
 
 /* -------------------- Seccion Preguntas -------------------- */
-.body-preguntas {
-  background-image: url("../img/plumas.png");
-  background-size: auto;
-  background-position: right center; }
+.body-preguntas .body-preguntas__preguntas {
+  padding: 2rem; }
 
 /* ----------------- Generales: body, Navbar, Footer ------------------ */
 * {
@@ -302,6 +297,5 @@ a:hover {
   width: 80%;
   margin: 2rem auto 4rem auto;
   background-color: white;
-  padding: 1rem;
   border: 1px solid #d6763e;
   border-radius: 1%; }

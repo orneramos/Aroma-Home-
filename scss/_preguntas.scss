@@ -1,7 +1,7 @@
 /* -------------------- Seccion Preguntas -------------------- */
 .body-preguntas {
-    @include background($fondoPlumas, auto, right center);
     .body-preguntas__preguntas {
         @extend %bodyContPreg;
+        padding: 2rem;
     }
 }
