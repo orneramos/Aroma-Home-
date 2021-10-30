@@ -74,21 +74,19 @@ main .tercera-seccion .tercera-seccion__div {
       max-width: 300px; } }
 
 /* ------------------ Seccion Productos --------------------- */
-.productos-container {
-  display: flex;
-  flex-flow: row wrap; }
-  .productos-container .productos-container__producto {
+section {
+  margin: 7rem auto 0 3rem; }
+  section .productos-container {
     display: flex;
-    flex-direction: column;
-    margin: 1rem 2rem;
-    width: 200px;
-    text-align: center; }
-    .productos-container .productos-container__producto .productos-container__producto__img {
-      width: 200px;
-      transition: all 0.4s;
-      box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); }
-      .productos-container .productos-container__producto .productos-container__producto__img:hover {
-        transform: translate(5px, 5px); }
+    flex-flow: row wrap; }
+    section .productos-container .producto-item {
+      margin: 2rem;
+      transition: all 0.4s; }
+      section .productos-container .producto-item:hover {
+        opacity: 0.7; }
+      section .productos-container .producto-item .producto-item__descripcion {
+        text-align: left;
+        margin-left: 1rem; }
 
 /* -------------------- Seccion Contacto ------------------- */
 .body-contacto {
