@@ -1,7 +1,6 @@
 /* ------------------ Seccion Lineas de fragancias ------------------- */
 .lineas-fragancias {
     width: 80%;
-    background-color:#fad6a5;
     .lineas-fragancias__descripcion {
         margin: 1rem;
     }
@@ -14,9 +13,7 @@
             border-radius: 25px;
             margin: 1rem auto;
             &:hover {
-                background-color: white;
-                border: 2px solid black;
-                & p {
+                p {
                     opacity: 1;
                     transition: all 1s;
                 }
@@ -27,8 +24,6 @@
             }
             h4 {
                 font-size: 1.5rem;
-                color: white;
-                text-shadow: $textShadow;
                 transition: all 1s;
                 opacity: 1;
             }
@@ -42,9 +37,9 @@
 }
 
 $colors: (
-    classic: rgb(250, 214, 165),
-    terra:  rgb(193, 154, 107),
-    jabones: rgb(241, 165, 89)
+    classic: #ffcc23,
+    terra:  #7A5238,
+    jabones: #e7aeaa
 );
 
 $backgroudcolors: (
@@ -54,17 +49,10 @@ $backgroudcolors: (
 );
 
 @each $name, $bgcolor in $colors {
-    .lineas-fragancias--#{$name} .box {
-        background-color: $bgcolor;
-        opacity: 0,9;
+    .lineas-fragancias--#{$name} .box h4{
+        color: $bgcolor;
     }
 }
-@each $name, $bgcolor in $backgroudcolors {
-    .lineas-fragancias--#{$name} {
-        background-color: $bgcolor;
-    }
-}
-
 
 /* media queries*/
 @media only screen and (min-width: 480px) {  

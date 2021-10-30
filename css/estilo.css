@@ -109,8 +109,7 @@ section {
 
 /* ------------------ Seccion Lineas de fragancias ------------------- */
 .lineas-fragancias {
-  width: 80%;
-  background-color: #fad6a5; }
+  width: 80%; }
   .lineas-fragancias .lineas-fragancias__descripcion {
     margin: 1rem; }
   .lineas-fragancias .lineas-fragancias__lista .box {
@@ -121,19 +120,14 @@ section {
     color: black;
     border-radius: 25px;
     margin: 1rem auto; }
-    .lineas-fragancias .lineas-fragancias__lista .box:hover {
-      background-color: white;
-      border: 2px solid black; }
-      .lineas-fragancias .lineas-fragancias__lista .box:hover p {
-        opacity: 1;
-        transition: all 1s; }
-      .lineas-fragancias .lineas-fragancias__lista .box:hover h4 {
-        opacity: 0;
-        transition: all 1s; }
+    .lineas-fragancias .lineas-fragancias__lista .box:hover p {
+      opacity: 1;
+      transition: all 1s; }
+    .lineas-fragancias .lineas-fragancias__lista .box:hover h4 {
+      opacity: 0;
+      transition: all 1s; }
     .lineas-fragancias .lineas-fragancias__lista .box h4 {
       font-size: 1.5rem;
-      color: white;
-      text-shadow: 1px 1px 2px grey;
       transition: all 1s;
       opacity: 1; }
     .lineas-fragancias .lineas-fragancias__lista .box p {
@@ -141,26 +135,14 @@ section {
       transition: all 1s;
       font-size: 1.5rem; }
 
-.lineas-fragancias--classic .box {
-  background-color: #fad6a5;
-  opacity: 0,9; }
+.lineas-fragancias--classic .box h4 {
+  color: #ffcc23; }
 
-.lineas-fragancias--terra .box {
-  background-color: #c19a6b;
-  opacity: 0,9; }
+.lineas-fragancias--terra .box h4 {
+  color: #7A5238; }
 
-.lineas-fragancias--jabones .box {
-  background-color: #f1a559;
-  opacity: 0,9; }
-
-.lineas-fragancias--classic {
-  background-color: rgba(250, 214, 165, 0.4); }
-
-.lineas-fragancias--terra {
-  background-color: rgba(193, 154, 107, 0.4); }
-
-.lineas-fragancias--jabones {
-  background-color: rgba(241, 165, 89, 0.4); }
+.lineas-fragancias--jabones .box h4 {
+  color: #e7aeaa; }
 
 /* media queries*/
 @media only screen and (min-width: 480px) {
@@ -238,12 +220,12 @@ h3 {
 
 .titulo {
   font-family: 'Dosis', sans-serif;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-weight: 500;
   letter-spacing: 5px;
   text-transform: uppercase;
   line-height: 2rem;
-  text-align: center; }
+  margin-left: 5rem; }
 
 .subtitulo {
   font-weight: 400;
