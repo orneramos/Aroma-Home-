@@ -14,15 +14,13 @@ $fondoPortada: url("../img/portada.jpg");
 
 $fondoGradiente: linear-gradient(to right, #FFFFFF, #ECE9E6);
 
-$fondoPlumas: url("../img/plumas.png");
-
 $colorGris: #ECE9E6;
 
 $colorNaranja: #F28627;
 
 @mixin sizes($width, $height) {
-    height: $height;
-    width: $width;
+    max-height: $height;
+    max-width: $width;
 }
 
 @mixin background($bg-img, $bg-size, $bg-position) {

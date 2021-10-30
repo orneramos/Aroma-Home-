@@ -2,7 +2,7 @@
 
 .body-contacto {
     .body-contacto__main {
-        @extend %bodyContPreg;
+        @extend %bodyContactoPreguntas;
         padding: 2rem;
         .form {
             margin:  1rem;

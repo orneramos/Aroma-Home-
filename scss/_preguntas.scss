@@ -1,7 +1,7 @@
 /* -------------------- Seccion Preguntas -------------------- */
 .body-preguntas {
     .body-preguntas__preguntas {
-        @extend %bodyContPreg;
+        @extend %bodyContactoPreguntas;
         padding: 2rem;
     }
 }

@@ -7,8 +7,8 @@
   height: 700px;
   width: 100%;
   background-image: url("../img/portada.jpg");
-  background-position: center;
   background-size: cover;
+  background-position: center;
   margin-top: 3rem;
   /* .index-portada__button {
             @extend %button;
@@ -34,8 +34,9 @@
 main .primera-seccion {
   margin: 3rem auto; }
   main .primera-seccion .div-imagenes .div-imagenes__img {
-    max-height: 250px;
-    max-width: 300px;
+    max-height: 300px;
+    max-width: 280px;
+    min-height: 220px;
     margin: 1rem; }
 
 main .segunda-seccion {
@@ -60,16 +61,22 @@ main .tercera-seccion .tercera-seccion__div {
 /* ---MEDIA QUERIES ---*/
 /*mayor a 900px */
 @media only screen and (min-width: 900px) {
-  .tercera-seccion .tercera-seccion__div img {
+  main .primera-seccion .div-imagenes .div-imagenes__img {
+    max-height: 280px;
+    max-width: 280px; }
+  main .tercera-seccion .tercera-seccion__div img {
     max-width: 200px; } }
 
 /* mayor a 1200*/
 @media only screen and (min-width: 1200px) {
-  .tercera-seccion .tercera-seccion__div {
+  main .primera-seccion .div-imagenes .div-imagenes__img {
+    max-height: 300px;
+    max-width: 300px; }
+  main .tercera-seccion .tercera-seccion__div {
     display: flex;
     width: 80%;
     margin: 2rem auto; }
-    .tercera-seccion .tercera-seccion__div img {
+    main .tercera-seccion .tercera-seccion__div img {
       margin: 1rem 3rem;
       max-width: 300px; } }
 
@@ -113,8 +120,8 @@ section {
   .lineas-fragancias .lineas-fragancias__descripcion {
     margin: 1rem; }
   .lineas-fragancias .lineas-fragancias__lista .box {
-    height: 250px;
-    width: 250px;
+    max-height: 250px;
+    max-width: 250px;
     text-align: center;
     padding: 0.5rem;
     color: black;
@@ -157,7 +164,7 @@ section {
 .body-preguntas .body-preguntas__preguntas {
   padding: 2rem; }
 
-/* ----------------- Generales: body, Navbar, Footer ------------------ */
+/* ----------------- Generales: body, Navbar, Footer, helpers ------------------ */
 * {
   margin: 0;
   padding: 0;
