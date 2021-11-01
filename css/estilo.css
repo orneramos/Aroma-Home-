@@ -52,11 +52,11 @@ main .segunda-seccion {
     max-width: 600px; }
 
 main .tercera-seccion .tercera-seccion__div {
-  width: 80%;
-  margin: 2rem auto; }
+  margin: auto;
+  padding: 2rem; }
   main .tercera-seccion .tercera-seccion__div img {
     margin: 1rem 3rem;
-    max-width: 300px; }
+    max-height: 400px; }
 
 /* ---MEDIA QUERIES ---*/
 /*mayor a 900px */
@@ -64,8 +64,14 @@ main .tercera-seccion .tercera-seccion__div {
   main .primera-seccion .div-imagenes .div-imagenes__img {
     max-height: 280px;
     max-width: 280px; }
-  main .tercera-seccion .tercera-seccion__div img {
-    max-width: 200px; } }
+  main .tercera-seccion .tercera-seccion__div {
+    display: flex;
+    width: 80%; }
+    main .tercera-seccion .tercera-seccion__div p {
+      margin: auto; }
+    main .tercera-seccion .tercera-seccion__div img {
+      margin: 1rem 3rem;
+      max-height: 400px; } }
 
 /* mayor a 1200*/
 @media only screen and (min-width: 1200px) {
@@ -74,11 +80,13 @@ main .tercera-seccion .tercera-seccion__div {
     max-width: 300px; }
   main .tercera-seccion .tercera-seccion__div {
     display: flex;
-    width: 80%;
-    margin: 2rem auto; }
+    width: 80%; }
+    main .tercera-seccion .tercera-seccion__div p {
+      margin: auto;
+      width: 50%; }
     main .tercera-seccion .tercera-seccion__div img {
       margin: 1rem 3rem;
-      max-width: 300px; } }
+      max-height: 600px; } }
 
 /* ------------------ Seccion Productos --------------------- */
 section {
@@ -130,26 +138,20 @@ section {
     .lineas-fragancias .lineas-fragancias__lista .box:hover p {
       opacity: 1;
       transition: all 1s; }
-    .lineas-fragancias .lineas-fragancias__lista .box:hover h4 {
-      opacity: 0;
-      transition: all 1s; }
     .lineas-fragancias .lineas-fragancias__lista .box h4 {
-      font-size: 1.5rem;
-      transition: all 1s;
-      opacity: 1; }
+      font-size: 1.5rem; }
     .lineas-fragancias .lineas-fragancias__lista .box p {
       opacity: 0;
-      transition: all 1s;
-      font-size: 1.5rem; }
+      transition: all 1s; }
 
 .lineas-fragancias--classic .box h4 {
   color: #ffcc23; }
 
 .lineas-fragancias--terra .box h4 {
-  color: #7A5238; }
+  color: #1e492f; }
 
 .lineas-fragancias--jabones .box h4 {
-  color: #e7aeaa; }
+  color: #e09e99; }
 
 /* media queries*/
 @media only screen and (min-width: 480px) {
@@ -205,17 +207,27 @@ body {
     padding: 1rem;
     text-align: center;
     box-shadow: 0 -2px 2px 1px rgba(0, 0, 0, 0.2);
-    display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 1rem 3rem; }
     body footer .footer__icon {
-      margin: 1rem 0.8rem;
+      margin: 0 0.8rem 2rem 0;
       color: black;
       transition: all 0.3s;
       font-size: 2.2rem; }
       body footer .footer__icon:hover {
         transform: scale(1.5, 1.5); }
+
+@media only screen and (min-width: 900px) {
+  footer {
+    display: grid;
+    grid-template-areas: "logo redes direccion"; }
+  .logo {
+    grid-area: logo; }
+  .redes {
+    grid-area: redes; }
+  .direccion {
+    grid-area: direccion; } }
 
 /* Generales y Helpers */
 h1 {

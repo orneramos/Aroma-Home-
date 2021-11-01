@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Dosis:wght@300;400;500&family=Raleway:wght@300&display=swap" rel="stylesheet">
     <!--fontAwesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--Bootstrap cdn-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
     <!--estilo css-->
@@ -79,8 +81,10 @@
                         </a> 
                         <p class="cursiva"> Dos lineas de fragrancias con aromas únicos, elegí la que mas te gusta! </p> 
                         <div class="div-imagenes">
-                            <img class="div-imagenes__img rounded" src="img/aromatizantes-terra.jpg" alt="imagen productos linea terra"/>
+                            <h4 class="mx-5">Linea Classsic</h4>
                             <img class="div-imagenes__img rounded" src="img/aromatizantes-classic.jpg" alt="imagen productos linea classic"/>
+                            <h4 class="mx-5">Linea Terra</h4>
+                            <img class="div-imagenes__img rounded" src="img/aromatizantes-terra.jpg" alt="imagen productos linea terra"/>
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-4">
@@ -157,7 +161,7 @@
                             <ul>
                                 <li>Disponible en aromatizantes y difusores</li>
                                 <li>Fragancia citrica y fresca</li>
-                                <li>Lima, limon, naranja y pomelo</li>
+                                <li>Notas de Lima, limon, naranja y pomelo</li>
                             </ul>
                         </div>
                     </div>
@@ -175,29 +179,34 @@
         <!--3era seccion: About us-->
         <section class="tercera-seccion">
             <h3 class="subtitulo uppercase">Sobre Aroma Home</h3>
-            <div class="tercera-seccion__div">
+            <div class="tercera-seccion__div" data-aos="zoom-out" data-aos-duration="1000">
                 <p>Las esencias son grandes aliados de las emociones. Muchas veces, una fragancia puede evocarnos sensaciones, sentimientos, recuerdos y emociones positivas. En este sentido, Aroma home surge a partir de un emprendimiento familiar que se reinventó para continuar con el legado familiar pero expresando nuevas emociones.
-                Hoy en día se elaboran con ingredientes naturales, florales que transmiten mucho más que un aroma agradable, tratando de convertir aromas en un medio natural para alcanzar el equilibrio emocional. Todas las fragancias tienen muchas propiedades especiales para garantizar nuestro bienestar de una manera muy natural. La gran pregunta aquí es, ¿ya elegiste tu fragancia de hoy? 
                 </p>
-                <img class="rounded img-fluid" src="img/nosotros.jpg" alt="imagen sobre Aroma Home"/>
+                <img class="rounded" src="img/difu1.jpg" alt="imagen ambiente con difusor"/>
+            </div>
+            <div class="tercera-seccion__div" data-aos="zoom-out" data-aos-duration="1000">
+                <img class="rounded" src="img/difu2.jpg" alt="imagen ambiente con difusor"/>
+                <p> Fragancias florales, frutales y de la naturaleza que transmiten mucho más que un aroma agradable, un ambiente placentero, relajante o vitalizante para alcanzar el equilibrio emocional. Todas las fragancias tienen propiedades especiales que garantizan nuestro bienestar de una manera muy natural. La gran pregunta aquí es, ¿ya elegiste tu fragancia de hoy?</p>
             </div>
         </section>
     </main>
     <!-- FOOTER: direccion y redes -->
     <footer>
-        <div>
+        <div class="logo">
             <h3 class="uppercase mb-0 mt-3">Aroma</h3>
             <p class="cursiva mt-0">. Home .</p>
         </div>
-        <div>
+        <div class="redes">
             <h4 class="cursiva">Seguinos en las redes!</h4>
             <a href="https://www.instagram.com/aromahome.tandil/?hl=es"><i class="footer__icon fab fa-instagram"></i></a>
             <a href="https://www.facebook.com/Aromahometandil-102136288907336"><i class="footer__icon fab fa-facebook-square"></i></a>
         </div>
-        <div>
+        <div class="direccion">
             <p>Tandil - 7000 </br> Buenos Aires</br>Argentina</p>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init()</script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js" integrity="sha384-PsUw7Xwds7x08Ew3exXhqzbhuEYmA2xnwc8BuD6SEr+UmEHlX8/MCltYEodzWA4u" crossorigin="anonymous"></script>
 </body>

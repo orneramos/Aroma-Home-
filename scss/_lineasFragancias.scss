@@ -17,20 +17,13 @@
                     opacity: 1;
                     transition: all 1s;
                 }
-                 h4 {
-                    opacity: 0;
-                    transition: all 1s;
-                }  
             }
             h4 {
                 font-size: 1.5rem;
-                transition: all 1s;
-                opacity: 1;
             }
             p {
                 opacity: 0;
                 transition: all 1s;
-                font-size: 1.5rem;
             }
         }
     }
@@ -38,14 +31,8 @@
 
 $colors: (
     classic: #ffcc23,
-    terra:  #7A5238,
-    jabones: #e7aeaa
-);
-
-$backgroudcolors: (
-    classic: rgba(250, 214, 165, 0.4),
-    terra:  rgba(193, 154, 107, 0.4),
-    jabones: rgba(241, 165, 89, 0.4)
+    terra:  #1e492f,
+    jabones: #e09e99
 );
 
 @each $name, $bgcolor in $colors {
