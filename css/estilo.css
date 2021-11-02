@@ -55,12 +55,12 @@ main .tercera-seccion .tercera-seccion__div {
 
 @media only screen and (min-width: 600px) {
   .header-index .index-portada .index-portada__logo {
-    width: 60%; } }
+    width: 55%; } }
 
 /*mayor a 900px */
 @media only screen and (min-width: 900px) {
   .header-index .index-portada .index-portada__logo {
-    width: 50%; }
+    width: 40%; }
   main .primera-seccion .div-imagenes .div-imagenes__img {
     max-height: 280px;
     max-width: 280px; }
