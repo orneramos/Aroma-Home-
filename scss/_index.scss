@@ -1,18 +1,20 @@
 /* ---------------------- INDEX ----------------------*/
-/* .header-index {
+.header-index {
     .index-portada {
-        height: 750px;
+        height: 700px;
+        display: flex;
         @include background($fondoPortada, cover, center);
+        margin: 0;
         .index-portada__logo {
-            width: 90%;
-            height: 100%;
-            margin: 3rem auto 0 auto;
-            background-color: rgba(255, 255, 255, 0.8);
             text-align: center;
+            margin: 13rem auto 0 auto;
             padding: 1rem;
+            background-color: rgba($color: white, $alpha: 0.7);
             border-radius: 5px;
+            height: max-content;
             h2 {
                 font-size: 3rem;
+                margin-bottom: 0;
             }
             p {
                 margin-top: 0;
@@ -24,11 +26,8 @@
                 margin-bottom: 3rem
             }
         }
-       .index-portada__button {
-            @extend %button;
-        }
     }
-} */
+} 
 main {
     .primera-seccion{
         margin: 3rem auto;
@@ -67,28 +66,16 @@ main {
     
 /* ---MEDIA QUERIES ---*/
 @media only screen and (min-width: 480px) {
-    .header-index {
-        .index-portada {
-            .index-portada__logo {
-                width: 70%;
-            } 
-        }
-    }
-    .segunda-seccion {
-        .segunda-seccion__img {
-            margin-left: 2rem;
+    main {
+        .segunda-seccion {
+            .segunda-seccion__img {
+                margin-left: 2rem;
+            }
         }
     }
 }
 
 @media only screen and (min-width: 600px) {
-    .header-index {
-        .index-portada {
-            .index-portada__logo {
-                width: 55%;
-            } 
-        }
-    }
     main {
         .segunda-seccion {
             .segunda-seccion__img {
@@ -114,13 +101,6 @@ main {
 
 /*mayor a 900px */
 @media only screen and (min-width: 900px) {
-    .header-index {
-        .index-portada {
-            .index-portada__logo {
-                width: 40%;
-            } 
-        }
-    }
     main {
         .primera-seccion {
             .div-imagenes {
@@ -153,13 +133,6 @@ main {
 
 /* mayor a 1200*/
 @media only screen and (min-width: 1200px) {
-    .header-index {
-        .index-portada {
-            .index-portada__logo {
-                width: 35%;
-            } 
-        }
-    }
     main {
         .primera-seccion {
             .div-imagenes {

@@ -1,34 +1,28 @@
 /* ---------------------- INDEX ----------------------*/
-/* .header-index {
-    .index-portada {
-        height: 750px;
-        @include background($fondoPortada, cover, center);
-        .index-portada__logo {
-            width: 90%;
-            height: 100%;
-            margin: 3rem auto 0 auto;
-            background-color: rgba(255, 255, 255, 0.8);
-            text-align: center;
-            padding: 1rem;
-            border-radius: 5px;
-            h2 {
-                font-size: 3rem;
-            }
-            p {
-                margin-top: 0;
-            }
-            h3 {
-                line-height: 3rem;
-            }
-            h4 {
-                margin-bottom: 3rem
-            }
-        }
-       .index-portada__button {
-            @extend %button;
-        }
-    }
-} */
+.header-index .index-portada {
+  height: 700px;
+  display: flex;
+  background-image: url("../img/portada.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 0; }
+  .header-index .index-portada .index-portada__logo {
+    text-align: center;
+    margin: 13rem auto 0 auto;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    height: max-content; }
+    .header-index .index-portada .index-portada__logo h2 {
+      font-size: 3rem;
+      margin-bottom: 0; }
+    .header-index .index-portada .index-portada__logo p {
+      margin-top: 0; }
+    .header-index .index-portada .index-portada__logo h3 {
+      line-height: 3rem; }
+    .header-index .index-portada .index-portada__logo h4 {
+      margin-bottom: 3rem; }
+
 main .primera-seccion {
   margin: 3rem auto; }
   main .primera-seccion .div-imagenes .div-imagenes__img {
@@ -58,14 +52,10 @@ main .tercera-seccion {
 
 /* ---MEDIA QUERIES ---*/
 @media only screen and (min-width: 480px) {
-  .header-index .index-portada .index-portada__logo {
-    width: 70%; }
-  .segunda-seccion .segunda-seccion__img {
+  main .segunda-seccion .segunda-seccion__img {
     margin-left: 2rem; } }
 
 @media only screen and (min-width: 600px) {
-  .header-index .index-portada .index-portada__logo {
-    width: 55%; }
   main .segunda-seccion .segunda-seccion__img {
     max-width: 800px; }
   main .tercera-seccion {
@@ -80,8 +70,6 @@ main .tercera-seccion {
 
 /*mayor a 900px */
 @media only screen and (min-width: 900px) {
-  .header-index .index-portada .index-portada__logo {
-    width: 40%; }
   main .primera-seccion .div-imagenes .div-imagenes__img {
     max-height: 280px;
     max-width: 280px; }
@@ -101,8 +89,6 @@ main .tercera-seccion {
 
 /* mayor a 1200*/
 @media only screen and (min-width: 1200px) {
-  .header-index .index-portada .index-portada__logo {
-    width: 35%; }
   main .primera-seccion .div-imagenes .div-imagenes__img {
     max-height: 300px;
     max-width: 300px; }
@@ -201,7 +187,8 @@ body {
   body header .navbar {
     padding: auto;
     font-weight: 500;
-    background-color: white; }
+    background-color: white;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); }
     body header .navbar .navbar__collapse {
       flex-grow: 0; }
   body header .navbar-light .navbar-brand {

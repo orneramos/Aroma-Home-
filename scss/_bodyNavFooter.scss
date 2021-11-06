@@ -15,6 +15,7 @@ body {
             padding: auto;
             font-weight: 500;
             background-color: white;
+            box-shadow: $boxShadow;
             .navbar__collapse {
                 flex-grow: 0;
             }
