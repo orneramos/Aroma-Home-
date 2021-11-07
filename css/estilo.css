@@ -24,12 +24,23 @@
       margin-bottom: 3rem; }
 
 main .primera-seccion {
-  margin: 3rem auto; }
-  main .primera-seccion .div-imagenes .div-imagenes__img {
-    max-height: 300px;
-    max-width: 280px;
-    min-height: 220px;
-    margin: 1rem; }
+  margin: 0; }
+  main .primera-seccion .fila1 {
+    padding: 5rem; }
+    main .primera-seccion .fila1 a {
+      color: #F28627; }
+      main .primera-seccion .fila1 a :hover {
+        color: black; }
+  main .primera-seccion .fila2 {
+    height: 500px;
+    background: #FEDAAA; }
+  main .primera-seccion .div-imagenes {
+    text-align: center; }
+    main .primera-seccion .div-imagenes .div-imagenes__img {
+      max-height: 300px;
+      max-width: 280px;
+      min-height: 220px;
+      margin: 1rem; }
 
 main .segunda-seccion {
   margin: 2rem 0;

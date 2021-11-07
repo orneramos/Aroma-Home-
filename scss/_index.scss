@@ -30,8 +30,22 @@
 } 
 main {
     .primera-seccion{
-        margin: 3rem auto;
+        margin: 0;
+        .fila1 {   
+            padding: 5rem;
+            a {
+                color: $colorNaranja;
+                & :hover {
+                    color: black;
+                }
+            }
+        }
+        .fila2 {
+            height: 500px;
+            background: #FEDAAA;
+        }
         .div-imagenes {
+            text-align: center;
             .div-imagenes__img {
                 @include sizes(280px, 300px);
                 min-height: 220px;

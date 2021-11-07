@@ -18,6 +18,8 @@ $colorGris: #ECE9E6;
 
 $colorNaranja: #F28627;
 
+$colorClaro: #f7f3eb;  
+
 @mixin sizes($width, $height) {
     max-height: $height;
     max-width: $width;
