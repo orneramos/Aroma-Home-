@@ -32,8 +32,11 @@ main .primera-seccion {
       main .primera-seccion .fila1 a :hover {
         color: black; }
   main .primera-seccion .fila2 {
-    height: 500px;
     background: #FEDAAA; }
+    main .primera-seccion .fila2 img {
+      max-height: 600px; }
+  main .primera-seccion .fila3 a {
+    color: #ce8e89; }
   main .primera-seccion .div-imagenes {
     text-align: center; }
     main .primera-seccion .div-imagenes .div-imagenes__img {

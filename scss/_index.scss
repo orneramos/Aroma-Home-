@@ -41,8 +41,15 @@ main {
             }
         }
         .fila2 {
-            height: 500px;
             background: #FEDAAA;
+            img {
+                max-height: 600px;
+            }
+        }
+        .fila3 {
+            a {
+                color:#ce8e89;
+            }
         }
         .div-imagenes {
             text-align: center;
