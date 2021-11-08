@@ -1,7 +1,7 @@
 /* ---------------------- INDEX ----------------------*/
 .header-index {
     .index-portada {
-        height: 700px;
+        height: 800px;
         display: flex;
         @include background($fondoPortada, cover, center);
         margin: 0;
@@ -31,7 +31,7 @@
 main {
     .primera-seccion{
         margin: 0;
-        .fila1 {   
+        .primera-seccion__productos {   
             padding: 5rem;
             a {
                 color: $colorNaranja;
@@ -40,23 +40,30 @@ main {
                 }
             }
         }
-        .fila2 {
-            background: #FEDAAA;
+        .primera-seccion__ventas {
+            text-align: center;
+            @include background($fondoGradiente2, cover, center);
             img {
-                max-height: 600px;
+                max-height: 500px;
+                margin: 1rem;
+            }
+            .button {
+                @extend %button;
             }
         }
-        .fila3 {
+        .primera-seccion__lineas {
+            text-align: center;
             a {
                 color:#ce8e89;
             }
-        }
-        .div-imagenes {
-            text-align: center;
-            .div-imagenes__img {
-                @include sizes(280px, 300px);
-                min-height: 220px;
-                margin: 1rem;
+            .div-imagenes {
+                text-align: center;
+                margin: 3rem auto;
+                justify-content: space-around;
+                .div-imagenes__img {
+                    @include sizes(280px, 280px);
+                    margin: 1rem 3rem;
+                }
             }
         }
     }
@@ -124,15 +131,24 @@ main {
 @media only screen and (min-width: 900px) {
     main {
         .primera-seccion {
-            .div-imagenes {
-                .div-imagenes__img {
-                    @include sizes(280px, 280px);
+            .primera-seccion__lineas {
+                .div-imagenes {
+                    display: flex;
+                    .div-imagenes__img {
+                    @include sizes(300px, 300px);
+                    }
+                }
+            }
+            .primera-seccion__ventas {
+                text-align: left;
+                img {
+                    max-height: 600px;
+                    margin: 0;
                 }
             }
         }
         .segunda-seccion {
-            margin: 2rem 0; 
-            @include background($fondoGradiente, cover, center);
+            margin: 2rem 0;
             .segunda-seccion__novedad {
                 width: 570%;
             }
@@ -156,9 +172,16 @@ main {
 @media only screen and (min-width: 1200px) {
     main {
         .primera-seccion {
-            .div-imagenes {
-                .div-imagenes__img {
-                    @include sizes(300px, 300px);
+            .primera-seccion__lineas {
+                .div-imagenes {
+                    .div-imagenes__img {
+                        @include sizes(500px, 375px);
+                    }
+                }
+            }
+            .primera-seccion__ventas {
+                img {
+                    max-height: 700px;
                 }
             }
         }

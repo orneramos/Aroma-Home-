@@ -1,6 +1,6 @@
 /* ---------------------- INDEX ----------------------*/
 .header-index .index-portada {
-  height: 700px;
+  height: 800px;
   display: flex;
   background-image: url("../img/portada.jpg");
   background-size: cover;
@@ -25,25 +25,32 @@
 
 main .primera-seccion {
   margin: 0; }
-  main .primera-seccion .fila1 {
+  main .primera-seccion .primera-seccion__productos {
     padding: 5rem; }
-    main .primera-seccion .fila1 a {
+    main .primera-seccion .primera-seccion__productos a {
       color: #F28627; }
-      main .primera-seccion .fila1 a :hover {
+      main .primera-seccion .primera-seccion__productos a :hover {
         color: black; }
-  main .primera-seccion .fila2 {
-    background: #FEDAAA; }
-    main .primera-seccion .fila2 img {
-      max-height: 600px; }
-  main .primera-seccion .fila3 a {
-    color: #ce8e89; }
-  main .primera-seccion .div-imagenes {
-    text-align: center; }
-    main .primera-seccion .div-imagenes .div-imagenes__img {
-      max-height: 300px;
-      max-width: 280px;
-      min-height: 220px;
+  main .primera-seccion .primera-seccion__ventas {
+    text-align: center;
+    background-image: linear-gradient(to left, #f7f3eb, #f3ecde);
+    background-size: cover;
+    background-position: center; }
+    main .primera-seccion .primera-seccion__ventas img {
+      max-height: 500px;
       margin: 1rem; }
+  main .primera-seccion .primera-seccion__lineas {
+    text-align: center; }
+    main .primera-seccion .primera-seccion__lineas a {
+      color: #ce8e89; }
+    main .primera-seccion .primera-seccion__lineas .div-imagenes {
+      text-align: center;
+      margin: 3rem auto;
+      justify-content: space-around; }
+      main .primera-seccion .primera-seccion__lineas .div-imagenes .div-imagenes__img {
+        max-height: 280px;
+        max-width: 280px;
+        margin: 1rem 3rem; }
 
 main .segunda-seccion {
   margin: 2rem 0;
@@ -84,14 +91,18 @@ main .tercera-seccion {
 
 /*mayor a 900px */
 @media only screen and (min-width: 900px) {
-  main .primera-seccion .div-imagenes .div-imagenes__img {
-    max-height: 280px;
-    max-width: 280px; }
+  main .primera-seccion .primera-seccion__lineas .div-imagenes {
+    display: flex; }
+    main .primera-seccion .primera-seccion__lineas .div-imagenes .div-imagenes__img {
+      max-height: 300px;
+      max-width: 300px; }
+  main .primera-seccion .primera-seccion__ventas {
+    text-align: left; }
+    main .primera-seccion .primera-seccion__ventas img {
+      max-height: 600px;
+      margin: 0; }
   main .segunda-seccion {
-    margin: 2rem 0;
-    background-image: linear-gradient(to right, #FFFFFF, #ECE9E6);
-    background-size: cover;
-    background-position: center; }
+    margin: 2rem 0; }
     main .segunda-seccion .segunda-seccion__novedad {
       width: 570%; }
     main .segunda-seccion .segunda-seccion__img {
@@ -103,9 +114,11 @@ main .tercera-seccion {
 
 /* mayor a 1200*/
 @media only screen and (min-width: 1200px) {
-  main .primera-seccion .div-imagenes .div-imagenes__img {
-    max-height: 300px;
-    max-width: 300px; }
+  main .primera-seccion .primera-seccion__lineas .div-imagenes .div-imagenes__img {
+    max-height: 375px;
+    max-width: 500px; }
+  main .primera-seccion .primera-seccion__ventas img {
+    max-height: 700px; }
   main .tercera-seccion .tercera-seccion__div img {
     max-height: 500px; } }
 
@@ -300,7 +313,7 @@ a:hover {
   color: black;
   text-shadow: 1px 1px 2px grey; }
 
-.body-contacto .body-contacto__main .form .form__button {
+main .primera-seccion .primera-seccion__ventas .button, .body-contacto .body-contacto__main .form .form__button {
   font-family: 'Dosis', sans-serif;
   font-size: 1.2rem;
   font-weight: 500;
@@ -317,7 +330,7 @@ a:hover {
   margin: 2rem;
   transition: all 0.3s;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); }
-  .body-contacto .body-contacto__main .form .form__button:hover {
+  main .primera-seccion .primera-seccion__ventas .button:hover, .body-contacto .body-contacto__main .form .form__button:hover {
     background-color: white;
     color: black;
     border: 2px solid white; }
