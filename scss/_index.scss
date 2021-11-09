@@ -1,9 +1,10 @@
 /* ---------------------- INDEX ----------------------*/
 .header-index {
     .index-portada {
-        height: 800px;
-        display: flex;
         @include background($fondoPortada, cover, center);
+        height: 800px;
+        max-width:100%;
+        display: flex;
         margin: 0;
         .index-portada__logo {
             text-align: center;
@@ -29,10 +30,9 @@
     }
 } 
 main {
-    .primera-seccion{
-        margin: 0;
-        .primera-seccion__productos {   
-            padding: 5rem;
+    .seccion-productos{
+        margin: 7rem auto;
+        div {   
             a {
                 color: $colorNaranja;
                 & :hover {
@@ -40,49 +40,50 @@ main {
                 }
             }
         }
-        .primera-seccion__ventas {
-            text-align: center;
-            @include background($fondoGradiente2, cover, center);
-            img {
-                max-height: 500px;
-                margin: 1rem;
-            }
-            .button {
-                @extend %button;
-            }
+    }
+    .seccion-ventas {
+        text-align: center;
+        margin: 0;
+        @include background($fondoGradiente2, cover, center);
+        img {
+            max-width: 300px;
         }
-        .primera-seccion__lineas {
+        .button {
+            @extend %button;
+            margin: 1rem auto !important;
+        }
+    }
+    .seccion-lineas {
+        text-align: center;
+        a {
+            color:#ce8e89;
+        }
+        .div-imagenes {
             text-align: center;
-            a {
-                color:#ce8e89;
-            }
-            .div-imagenes {
-                text-align: center;
-                margin: 3rem auto;
-                justify-content: space-around;
-                .div-imagenes__img {
-                    @include sizes(280px, 280px);
-                    margin: 1rem 3rem;
-                }
+            margin: 3rem auto;
+            justify-content: space-around;
+            .div-imagenes__img {
+                @include sizes(280px, 280px);
+                margin: 1rem 3rem;
             }
         }
     }
-    .segunda-seccion {
+    .seccion-promos {
         margin: 2rem 0; 
         @include background($fondoGradiente, cover, center);
-        .segunda-seccion__novedad {
+        .seccion-promos__novedad {
             text-align: center;
             margin: 4rem auto 0 auto;
             line-height: 2rem;
         }
-        .segunda-seccion__img {
+        .seccion-promos__img {
             width: max-content;
             margin-bottom: 2rem;
         }
     }
-    .tercera-seccion {
+    .seccion-aboutUs {
         margin: 3rem 1rem;
-        .tercera-seccion__div {
+        .seccion-aboutUs__div {
             img {
                 margin: 1rem 3rem;
                 max-height: 300px;
@@ -95,9 +96,11 @@ main {
 /* ---MEDIA QUERIES ---*/
 @media only screen and (min-width: 480px) {
     main {
-        .segunda-seccion {
-            .segunda-seccion__img {
-                margin-left: 2rem;
+        main {
+            .seccion-promos {
+                .seccion-promos__img {
+                    margin-left: 2rem;
+                }
             }
         }
     }
@@ -105,14 +108,14 @@ main {
 
 @media only screen and (min-width: 600px) {
     main {
-        .segunda-seccion {
-            .segunda-seccion__img {
+        .seccion-promos {
+            .seccion-promos__img {
                 max-width: 800px;
             }
         }
-        .tercera-seccion {
+        .seccion-aboutUs {
             margin: 3rem 1rem;
-            .tercera-seccion__div {
+            .seccion-aboutUs__div {
                 display: flex;
                 p {
                     margin: auto;
@@ -130,36 +133,37 @@ main {
 /*mayor a 900px */
 @media only screen and (min-width: 900px) {
     main {
-        .primera-seccion {
-            .primera-seccion__lineas {
-                .div-imagenes {
-                    display: flex;
-                    .div-imagenes__img {
-                    @include sizes(300px, 300px);
-                    }
-                }
-            }
-            .primera-seccion__ventas {
-                text-align: left;
-                img {
-                    max-height: 600px;
-                    margin: 0;
+        .seccion-lineas {
+            .div-imagenes {
+                display: flex;
+                .div-imagenes__img {
+                @include sizes(300px, 300px);
                 }
             }
         }
-        .segunda-seccion {
+        .seccion-ventas {
+            text-align: left;
+            img {
+                max-width: 400px;
+                margin: 0;
+            }
+            .button {
+                margin: 2rem !important;
+            }
+        }
+        .seccion-promos {
             margin: 2rem 0;
-            .segunda-seccion__novedad {
+            .seccion-promos__novedad {
                 width: 570%;
             }
-            .segunda-seccion__img {
+            .seccion-promos__img {
                 float: right;
                 max-width: 600px;
                 margin: auto;
             }
         }
-        .tercera-seccion {
-            .tercera-seccion__div {    
+        .seccion-aboutUs {
+            .seccion-aboutUs__div {    
                 img {
                     max-height: 400px;
                 }
@@ -171,22 +175,20 @@ main {
 /* mayor a 1200*/
 @media only screen and (min-width: 1200px) {
     main {
-        .primera-seccion {
-            .primera-seccion__lineas {
-                .div-imagenes {
-                    .div-imagenes__img {
-                        @include sizes(500px, 375px);
-                    }
-                }
-            }
-            .primera-seccion__ventas {
-                img {
-                    max-height: 700px;
+        .seccion-lineas {
+            .div-imagenes {
+                .div-imagenes__img {
+                    @include sizes(500px, 375px);
                 }
             }
         }
-        .tercera-seccion {
-            .tercera-seccion__div {
+        .seccion-ventas {
+            img {
+                max-width: 550px;
+            }
+        }
+        .seccion-aboutUs {
+            .seccion-aboutUs__div {
                 img {
                     max-height: 500px;
                 }

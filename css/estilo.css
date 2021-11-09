@@ -1,10 +1,11 @@
 /* ---------------------- INDEX ----------------------*/
 .header-index .index-portada {
-  height: 800px;
-  display: flex;
   background-image: url("../img/portada.jpg");
   background-size: cover;
   background-position: center;
+  height: 800px;
+  max-width: 100%;
+  display: flex;
   margin: 0; }
   .header-index .index-portada .index-portada__logo {
     text-align: center;
@@ -23,117 +24,121 @@
     .header-index .index-portada .index-portada__logo h4 {
       margin-bottom: 3rem; }
 
-main .primera-seccion {
-  margin: 0; }
-  main .primera-seccion .primera-seccion__productos {
-    padding: 5rem; }
-    main .primera-seccion .primera-seccion__productos a {
-      color: #F28627; }
-      main .primera-seccion .primera-seccion__productos a :hover {
-        color: black; }
-  main .primera-seccion .primera-seccion__ventas {
-    text-align: center;
-    background-image: linear-gradient(to left, #f7f3eb, #f3ecde);
-    background-size: cover;
-    background-position: center; }
-    main .primera-seccion .primera-seccion__ventas img {
-      max-height: 500px;
-      margin: 1rem; }
-  main .primera-seccion .primera-seccion__lineas {
-    text-align: center; }
-    main .primera-seccion .primera-seccion__lineas a {
-      color: #ce8e89; }
-    main .primera-seccion .primera-seccion__lineas .div-imagenes {
-      text-align: center;
-      margin: 3rem auto;
-      justify-content: space-around; }
-      main .primera-seccion .primera-seccion__lineas .div-imagenes .div-imagenes__img {
-        max-height: 280px;
-        max-width: 280px;
-        margin: 1rem 3rem; }
+main .seccion-productos {
+  margin: 7rem auto; }
+  main .seccion-productos div a {
+    color: #F28627; }
+    main .seccion-productos div a :hover {
+      color: black; }
 
-main .segunda-seccion {
+main .seccion-ventas {
+  text-align: center;
+  margin: 0;
+  background-image: linear-gradient(to left, #f7f3eb, #f3ecde);
+  background-size: cover;
+  background-position: center; }
+  main .seccion-ventas img {
+    max-width: 300px; }
+  main .seccion-ventas .button {
+    margin: 1rem auto !important; }
+
+main .seccion-lineas {
+  text-align: center; }
+  main .seccion-lineas a {
+    color: #ce8e89; }
+  main .seccion-lineas .div-imagenes {
+    text-align: center;
+    margin: 3rem auto;
+    justify-content: space-around; }
+    main .seccion-lineas .div-imagenes .div-imagenes__img {
+      max-height: 280px;
+      max-width: 280px;
+      margin: 1rem 3rem; }
+
+main .seccion-promos {
   margin: 2rem 0;
   background-image: linear-gradient(to right, #FFFFFF, #ECE9E6);
   background-size: cover;
   background-position: center; }
-  main .segunda-seccion .segunda-seccion__novedad {
+  main .seccion-promos .seccion-promos__novedad {
     text-align: center;
     margin: 4rem auto 0 auto;
     line-height: 2rem; }
-  main .segunda-seccion .segunda-seccion__img {
+  main .seccion-promos .seccion-promos__img {
     width: max-content;
     margin-bottom: 2rem; }
 
-main .tercera-seccion {
+main .seccion-aboutUs {
   margin: 3rem 1rem; }
-  main .tercera-seccion .tercera-seccion__div img {
+  main .seccion-aboutUs .seccion-aboutUs__div img {
     margin: 1rem 3rem;
     max-height: 300px; }
 
 /* ---MEDIA QUERIES ---*/
 @media only screen and (min-width: 480px) {
-  main .segunda-seccion .segunda-seccion__img {
+  main main .seccion-promos .seccion-promos__img {
     margin-left: 2rem; } }
 
 @media only screen and (min-width: 600px) {
-  main .segunda-seccion .segunda-seccion__img {
+  main .seccion-promos .seccion-promos__img {
     max-width: 800px; }
-  main .tercera-seccion {
+  main .seccion-aboutUs {
     margin: 3rem 1rem; }
-    main .tercera-seccion .tercera-seccion__div {
+    main .seccion-aboutUs .seccion-aboutUs__div {
       display: flex; }
-      main .tercera-seccion .tercera-seccion__div p {
+      main .seccion-aboutUs .seccion-aboutUs__div p {
         margin: auto; }
-      main .tercera-seccion .tercera-seccion__div img {
+      main .seccion-aboutUs .seccion-aboutUs__div img {
         margin: 1rem 3rem;
         max-height: 300px; } }
 
 /*mayor a 900px */
 @media only screen and (min-width: 900px) {
-  main .primera-seccion .primera-seccion__lineas .div-imagenes {
+  main .seccion-lineas .div-imagenes {
     display: flex; }
-    main .primera-seccion .primera-seccion__lineas .div-imagenes .div-imagenes__img {
+    main .seccion-lineas .div-imagenes .div-imagenes__img {
       max-height: 300px;
       max-width: 300px; }
-  main .primera-seccion .primera-seccion__ventas {
+  main .seccion-ventas {
     text-align: left; }
-    main .primera-seccion .primera-seccion__ventas img {
-      max-height: 600px;
+    main .seccion-ventas img {
+      max-width: 400px;
       margin: 0; }
-  main .segunda-seccion {
+    main .seccion-ventas .button {
+      margin: 2rem !important; }
+  main .seccion-promos {
     margin: 2rem 0; }
-    main .segunda-seccion .segunda-seccion__novedad {
+    main .seccion-promos .seccion-promos__novedad {
       width: 570%; }
-    main .segunda-seccion .segunda-seccion__img {
+    main .seccion-promos .seccion-promos__img {
       float: right;
       max-width: 600px;
       margin: auto; }
-  main .tercera-seccion .tercera-seccion__div img {
+  main .seccion-aboutUs .seccion-aboutUs__div img {
     max-height: 400px; } }
 
 /* mayor a 1200*/
 @media only screen and (min-width: 1200px) {
-  main .primera-seccion .primera-seccion__lineas .div-imagenes .div-imagenes__img {
+  main .seccion-lineas .div-imagenes .div-imagenes__img {
     max-height: 375px;
     max-width: 500px; }
-  main .primera-seccion .primera-seccion__ventas img {
-    max-height: 700px; }
-  main .tercera-seccion .tercera-seccion__div img {
+  main .seccion-ventas img {
+    max-width: 550px; }
+  main .seccion-aboutUs .seccion-aboutUs__div img {
     max-height: 500px; } }
 
 /* ------------------ Seccion Productos --------------------- */
-section {
+.productos {
   margin: 7rem auto 0 3rem; }
-  section .productos-container {
+  .productos .productos-container {
     display: flex;
     flex-flow: row wrap; }
-    section .productos-container .producto-item {
+    .productos .productos-container .producto-item {
       margin: 2rem;
       transition: all 0.4s; }
-      section .productos-container .producto-item:hover {
+      .productos .productos-container .producto-item:hover {
         opacity: 0.7; }
-      section .productos-container .producto-item .producto-item__descripcion {
+      .productos .productos-container .producto-item .producto-item__descripcion {
         text-align: left;
         margin-left: 1rem; }
 
@@ -313,7 +318,7 @@ a:hover {
   color: black;
   text-shadow: 1px 1px 2px grey; }
 
-main .primera-seccion .primera-seccion__ventas .button, .body-contacto .body-contacto__main .form .form__button {
+main .seccion-ventas .button, .body-contacto .body-contacto__main .form .form__button {
   font-family: 'Dosis', sans-serif;
   font-size: 1.2rem;
   font-weight: 500;
@@ -321,16 +326,16 @@ main .primera-seccion .primera-seccion__ventas .button, .body-contacto .body-con
   justify-content: center;
   align-content: center;
   text-decoration: none;
-  width: 15rem;
+  width: 10rem;
   background-color: black;
   color: white;
   border: 2px solid black;
   border-radius: 5px;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem;
   margin: 2rem;
   transition: all 0.3s;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); }
-  main .primera-seccion .primera-seccion__ventas .button:hover, .body-contacto .body-contacto__main .form .form__button:hover {
+  main .seccion-ventas .button:hover, .body-contacto .body-contacto__main .form .form__button:hover {
     background-color: white;
     color: black;
     border: 2px solid white; }
