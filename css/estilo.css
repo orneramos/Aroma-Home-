@@ -5,7 +5,7 @@
   background-position: center;
   height: 800px;
   display: flex;
-  margin: 0; }
+  margin-bottom: 5rem; }
   .header-index .index-portada .index-portada__logo {
     text-align: center;
     margin: 13rem auto 0 auto;
@@ -24,10 +24,10 @@
       margin-bottom: 3rem; }
 
 main .seccion-productos {
-  margin: 7rem auto; }
-  main .seccion-productos div a {
+  margin: 3rem auto; }
+  main .seccion-productos a {
     color: #F28627; }
-    main .seccion-productos div a :hover {
+    main .seccion-productos a :hover {
       color: black; }
 
 main .seccion-ventas {

@@ -4,7 +4,7 @@
         @include background($fondoPortada, cover, center);
         height: 800px;
         display: flex;
-        margin: 0;
+        margin-bottom: 5rem;
         .index-portada__logo {
             text-align: center;
             margin: 13rem auto 0 auto;
@@ -29,14 +29,12 @@
     }
 } 
 main {
-    .seccion-productos{
-        margin: 7rem auto;
-        div {   
-            a {
-                color: $colorNaranja;
-                & :hover {
-                    color: black;
-                }
+    .seccion-productos {
+        margin: 3rem auto; 
+        a {
+            color: $colorNaranja;
+            & :hover {
+                color: black;
             }
         }
     }
