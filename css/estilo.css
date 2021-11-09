@@ -4,7 +4,6 @@
   background-size: cover;
   background-position: center;
   height: 800px;
-  max-width: 100%;
   display: flex;
   margin: 0; }
   .header-index .index-portada .index-portada__logo {
@@ -76,7 +75,7 @@ main .seccion-aboutUs {
 
 /* ---MEDIA QUERIES ---*/
 @media only screen and (min-width: 480px) {
-  main main .seccion-promos .seccion-promos__img {
+  main .seccion-promos .seccion-promos__img {
     margin-left: 2rem; } }
 
 @media only screen and (min-width: 600px) {

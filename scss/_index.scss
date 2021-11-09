@@ -3,7 +3,6 @@
     .index-portada {
         @include background($fondoPortada, cover, center);
         height: 800px;
-        max-width:100%;
         display: flex;
         margin: 0;
         .index-portada__logo {
@@ -96,11 +95,9 @@ main {
 /* ---MEDIA QUERIES ---*/
 @media only screen and (min-width: 480px) {
     main {
-        main {
-            .seccion-promos {
-                .seccion-promos__img {
-                    margin-left: 2rem;
-                }
+        .seccion-promos {
+            .seccion-promos__img {
+                margin-left: 2rem;
             }
         }
     }
