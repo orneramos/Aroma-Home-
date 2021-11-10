@@ -67,7 +67,7 @@ main {
     }
     .seccion-promos {
         margin: 2rem 0; 
-        @include background($fondoGradiente, cover, center);
+        @include background($fondoGradiente2, cover, center);
         .seccion-promos__novedad {
             text-align: center;
             margin: 4rem auto 0 auto;

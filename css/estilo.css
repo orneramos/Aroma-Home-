@@ -33,7 +33,7 @@ main .seccion-productos {
 main .seccion-ventas {
   text-align: center;
   width: 100%;
-  background-image: linear-gradient(to left, #f7f3eb, #f0f0f0);
+  background-image: linear-gradient(to left, #f7f3eb, #FFFFFF);
   background-size: cover;
   background-position: center; }
   main .seccion-ventas .row {
@@ -60,7 +60,7 @@ main .seccion-lineas {
 
 main .seccion-promos {
   margin: 2rem 0;
-  background-image: linear-gradient(to right, #FFFFFF, #ECE9E6);
+  background-image: linear-gradient(to left, #f7f3eb, #FFFFFF);
   background-size: cover;
   background-position: center; }
   main .seccion-promos .seccion-promos__novedad {
