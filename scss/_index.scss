@@ -37,7 +37,11 @@ main {
     }
     .seccion-ventas {
         text-align: center;
+        width: 100%;
         @include background($fondoGradiente2, cover, center);
+        .row {
+            margin-right: 0;
+        }
         img {
             max-width: 300px;
         }
@@ -176,7 +180,7 @@ main {
         }
         .seccion-ventas {
             img {
-                max-width: 550px;
+                max-width: 450px;
             }
         }
         .seccion-aboutUs {

@@ -32,9 +32,12 @@ main .seccion-productos {
 
 main .seccion-ventas {
   text-align: center;
+  width: 100%;
   background-image: linear-gradient(to left, #f7f3eb, #f0f0f0);
   background-size: cover;
   background-position: center; }
+  main .seccion-ventas .row {
+    margin-right: 0; }
   main .seccion-ventas img {
     max-width: 300px; }
   main .seccion-ventas .button {
@@ -124,7 +127,7 @@ main .seccion-aboutUs {
     max-height: 375px;
     max-width: 500px; }
   main .seccion-ventas img {
-    max-width: 550px; }
+    max-width: 450px; }
   main .seccion-aboutUs .seccion-aboutUs__div img {
     max-height: 500px; } }
 
