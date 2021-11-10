@@ -30,9 +30,9 @@
 }
 
 $colors: (
-    classic: #ffcc23,
-    terra:  #1e492f,
-    jabones: #e09e99
+    classic: #e9b91e,
+    terra:  #3f6d0a,
+    jabones: $colorRosa,
 );
 
 @each $name, $bgcolor in $colors {

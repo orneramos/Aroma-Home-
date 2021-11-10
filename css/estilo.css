@@ -1,38 +1,37 @@
 /* ---------------------- INDEX ----------------------*/
-.header-index .index-portada {
+header .index-portada {
   background-image: url("../img/portada.jpg");
   background-size: cover;
   background-position: center;
   height: 800px;
   display: flex;
   margin-bottom: 5rem; }
-  .header-index .index-portada .index-portada__logo {
+  header .index-portada .index-portada__logo {
     text-align: center;
     margin: 13rem auto 0 auto;
     padding: 1rem;
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 5px;
     height: max-content; }
-    .header-index .index-portada .index-portada__logo h2 {
+    header .index-portada .index-portada__logo h2 {
       font-size: 3rem;
       margin-bottom: 0; }
-    .header-index .index-portada .index-portada__logo p {
+    header .index-portada .index-portada__logo p {
       margin-top: 0; }
-    .header-index .index-portada .index-portada__logo h3 {
+    header .index-portada .index-portada__logo h3 {
       line-height: 3rem; }
-    .header-index .index-portada .index-portada__logo h4 {
+    header .index-portada .index-portada__logo h4 {
       margin-bottom: 3rem; }
 
 main .seccion-productos {
-  margin: 3rem auto; }
+  margin: 3rem auto 5rem auto; }
   main .seccion-productos a {
-    color: #F28627; }
-    main .seccion-productos a :hover {
+    color: #f7762c; }
+    main .seccion-productos a:hover {
       color: black; }
 
 main .seccion-ventas {
   text-align: center;
-  margin: 0;
   background-image: linear-gradient(to left, #f7f3eb, #f3ecde);
   background-size: cover;
   background-position: center; }
@@ -42,9 +41,12 @@ main .seccion-ventas {
     margin: 1rem auto !important; }
 
 main .seccion-lineas {
+  margin: 5rem auto;
   text-align: center; }
   main .seccion-lineas a {
     color: #ce8e89; }
+    main .seccion-lineas a:hover {
+      color: black; }
   main .seccion-lineas .div-imagenes {
     text-align: center;
     margin: 3rem auto;
@@ -183,13 +185,13 @@ main .seccion-aboutUs {
       transition: all 1s; }
 
 .lineas-fragancias--classic .box h4 {
-  color: #ffcc23; }
+  color: #e9b91e; }
 
 .lineas-fragancias--terra .box h4 {
-  color: #1e492f; }
+  color: #3f6d0a; }
 
 .lineas-fragancias--jabones .box h4 {
-  color: #e09e99; }
+  color: #ce8e89; }
 
 /* media queries*/
 @media only screen and (min-width: 480px) {
@@ -312,10 +314,9 @@ ul {
 a {
   text-decoration: none;
   color: black; }
-
-a:hover {
-  color: black;
-  text-shadow: 1px 1px 2px grey; }
+  a:hover {
+    color: black;
+    text-shadow: 1px 1px 2px grey; }
 
 main .seccion-ventas .button, .body-contacto .body-contacto__main .form .form__button {
   font-family: 'Dosis', sans-serif;

@@ -3,8 +3,6 @@
 $cursiva: 'Caveat', cursive;
 
 $textShadow: 1px 1px 2px grey;
-$textShadow2: 1px 1px 2px #f7762c;
-$textShadow3: 1px 1px 2px black;
 
 $boxShadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 
@@ -13,13 +11,14 @@ $boxShadow-arriba: 0 -2px 2px 1px rgba(0, 0, 0, 0.2);
 $fondoPortada: url("../img/portada.jpg");
 
 $fondoGradiente: linear-gradient(to right, #FFFFFF, #ECE9E6);
+
 $fondoGradiente2: linear-gradient(to left, #f7f3eb, #f3ecde);
 
-$colorGris: #ECE9E6;
+$colorNaranja: #f7762c;
 
-$colorNaranja: #F28627;
+$colorClaro: #f7f3eb; 
 
-$colorClaro: #f7f3eb;  
+$colorRosa: #ce8e89;
 
 @mixin sizes($width, $height) {
     max-height: $height;
@@ -30,4 +29,11 @@ $colorClaro: #f7f3eb;
     background-image: $bg-img;
     background-size: $bg-size;
     background-position: $bg-position;
+}
+
+@mixin links ($color, $colorHover) {
+    color: $color;
+    &:hover {
+        color: $colorHover;
+    }
 }

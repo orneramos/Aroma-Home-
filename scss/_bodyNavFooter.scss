@@ -21,11 +21,11 @@ body {
             }
         }
         .navbar-light .navbar-brand{
-            color: #f7762c;
+            color: $colorNaranja;
             font-size: 2rem;
             transition: all 0.3s;
             &:hover {
-                color: #f7762c;
+                color: $colorNaranja;
             }
         }  
         .navbar-light .navbar-nav .nav-link {
