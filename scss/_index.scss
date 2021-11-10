@@ -30,7 +30,7 @@ header {
 } 
 main {
     .seccion-productos {
-        margin: 3rem auto 5rem auto; 
+        margin: 3rem auto 6rem auto; 
         a {
             @include links ($colorNaranja, black);
         }
@@ -47,18 +47,17 @@ main {
         }
     }
     .seccion-lineas {
-        margin: 5rem auto;
+        margin: 6rem auto;
         text-align: center;
         a {
             @include links ($colorRosa, black);
         }
         .div-imagenes {
             text-align: center;
-            margin: 3rem auto;
-            justify-content: space-around;
+            justify-content: center;
+            margin: 2rem;
             .div-imagenes__img {
                 @include sizes(280px, 280px);
-                margin: 1rem 3rem;
             }
         }
     }
@@ -128,6 +127,7 @@ main {
         .seccion-lineas {
             .div-imagenes {
                 display: flex;
+                justify-content: space-around;
                 .div-imagenes__img {
                 @include sizes(300px, 300px);
                 }
