@@ -36,9 +36,9 @@ $colors: (
     jabones: $colorRosa,
 );
 
-@each $name, $bgcolor in $colors {
+@each $name, $color in $colors {
     .lineas-fragancias--#{$name} .box h4{
-        color: $bgcolor;
+        color: $color;
     }
 }
 

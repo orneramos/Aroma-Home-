@@ -18,12 +18,6 @@
             }
             .form__button {
                 @extend %button;
-                &:hover{
-                    background-color: white;
-                    color: black;
-                    letter-spacing: 2px;
-                    border: none;
-                }
             }
         }
     }

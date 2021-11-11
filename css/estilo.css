@@ -78,13 +78,11 @@ main .seccion-aboutUs {
     max-height: 300px; }
 
 /* ---MEDIA QUERIES ---*/
-@media only screen and (min-width: 480px) {
-  main .seccion-promos .seccion-promos__img {
-    margin-left: 2rem; } }
-
 @media only screen and (min-width: 600px) {
   main .seccion-promos .seccion-promos__img {
-    max-width: 800px; }
+    max-width: 800px;
+    display: block;
+    margin: 0 auto; }
   main .seccion-aboutUs {
     margin: 3rem 1rem; }
     main .seccion-aboutUs .seccion-aboutUs__div {
@@ -159,11 +157,6 @@ main .seccion-aboutUs {
       .body-contacto .body-contacto__main .form .form__element:focus {
         outline: thin;
         border: 2px solid #C77345; }
-    .body-contacto .body-contacto__main .form .form__button:hover {
-      background-color: white;
-      color: black;
-      letter-spacing: 2px;
-      border: none; }
 
 /* ------------------ Seccion Lineas de fragancias ------------------- */
 .lineas-fragancias {
