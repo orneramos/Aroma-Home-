@@ -167,7 +167,8 @@ main .seccion-aboutUs {
 
 /* ------------------ Seccion Lineas de fragancias ------------------- */
 .lineas-fragancias {
-  width: 80%; }
+  width: 80%;
+  margin: 7rem auto; }
   .lineas-fragancias .lineas-fragancias__descripcion {
     margin: 1rem; }
   .lineas-fragancias .lineas-fragancias__lista .box {
@@ -198,12 +199,10 @@ main .seccion-aboutUs {
 
 /* media queries*/
 @media only screen and (min-width: 480px) {
-  .lineas-fragancias {
-    margin: 3rem auto; }
-    .lineas-fragancias .lineas-fragancias__lista {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-evenly; } }
+  .lineas-fragancias .lineas-fragancias__lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; } }
 
 /* -------------------- Seccion Preguntas -------------------- */
 .body-preguntas .body-preguntas__preguntas {
